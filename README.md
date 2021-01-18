@@ -1,5 +1,5 @@
 # Compute all polyiamonds that fit containment criteria
 
-This program computes all polyiamonds that do not contain a set of smaller polyiamonds and/or are contained in a set of larger polyiamonds. This is used in [Paper] to prove that all polyiamonds of size 15 or larger can be folded into octahedrons.
+This program computes all polyiamonds that do not contain a set of smaller polyiamonds and/or are contained in a set of larger polyiamonds. We use this program in our work on *'Folding Polyiamonds into Octahedra'* to prove that all polyiamonds of size 15 or larger can be folded into octahedrons.
 
 This programm can be modified to generate polyiamonds fitting other criteria. The criteria are set in `main.py`. The polyiamond sets are set in `data.py`. `polyiamond.py` defines the polyiamond data structure: Polyiamonds are represented as 3 dimensional arrays containing boolean variables to indicate if the cell is part of the polyiamond. To keep the arrays smaller and easier to handle, there is a shift added every two rows. `helpers.py` contains lists to generate polyiamonds as subsets of larger polyiamonds. Finally, `polyiamond_generation.py` generates a set of polyiamonds of size `n+1` from a set of polyiamonds of size `n`.
